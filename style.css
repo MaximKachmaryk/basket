@@ -1,0 +1,34 @@
+.product_body {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_body-second {
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_body .img__keds {
+    display: flex;
+    height: 250px;
+    width: 25Opx;
+}
+
+.product_body-second .img__keds {
+    display: flex;
+    height: 250px;
+    width: 25Opx;
+}
+
+.product_body .details_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
