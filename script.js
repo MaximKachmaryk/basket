@@ -1,16 +1,16 @@
 //отримання даниз з форми select та присвоєння цін 
 
 
-//const photo = document.querySelector('.img__raincoat').addEventListener('click', () => {
-//  photo.style.backgroundImage = 'url("/img/blue.jpg")';
-//});
+
 const priseRaincoatAction = 1490;
 const priseRaincoat = 2090;
 const PriseColor = document.querySelector(".first_prise");
+const Photo = document.querySelector('.img__raincoat img');
+const Photor = document.createElement('div');
 
-//const priseRaincoatAction = 4180;
+
 document.getElementById("val").addEventListener('click', () => {
-    // let photo = document.querySelector('.img__raincoat');
+
 
     const valueFirstItem = document.getElementById('val').value;
     console.log(valueFirstItem);
@@ -32,11 +32,23 @@ document.getElementById("valColor").addEventListener('click', () => {
     console.log(valueColor);
     if (valueColor == 1) {
         PriseColor.innerHTML = 2490;
+        Photo.src = '/img/png.jpg';
     }
 
 
     if (valueColor == 2) {
         PriseColor.innerHTML = 1490;
+        Photo.src = '/img/blue.jpg';
+
+        /*  Photo.forEach(item => {
+             item.style.backroundImage = 'url("/img/blue.jpg")';
+             //item.style.backroundImage = "yellow";
+
+         }); */
+
+        Photo.innerHTML = '< div class = "img__raincoat" > < img src = "/img/png.jpg" > < /div>';
+
+
 
 
     }
@@ -56,7 +68,7 @@ document.getElementById("shoes").addEventListener('click', () => {
     let finalPriseShoes = document.querySelector('.total-price');
     finalPriseShoes.innerHTML = valueFirstItemShoes;
     if (valueFirstItemShoes == 1) {
-        finalPriseShoes.innerHTML = 1490 + finalPrise;
+        finalPriseShoes.innerHTML = 1490;
 
     } else if (valueFirstItemShoes == 2) {
         finalPriseShoes.innerHTML = 2090 * 2;

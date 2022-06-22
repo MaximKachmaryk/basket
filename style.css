@@ -4,6 +4,11 @@
     justify-content: space-between;
 }
 
+.product_body .parameters {
+    display: block;
+    width: 500px;
+}
+
 .product_body-second {
     margin-top: 300px;
     display: flex;
@@ -31,4 +36,9 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.card-body {
+    display: block;
+    margin-top: 600px;
 }
