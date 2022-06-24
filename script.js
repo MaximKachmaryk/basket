@@ -6,7 +6,7 @@ const priseRaincoatAction = 1490;
 const priseRaincoat = 2090;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
-const Photor = document.createElement('div');
+
 
 
 document.getElementById("val").addEventListener('click', () => {
@@ -40,13 +40,6 @@ document.getElementById("valColor").addEventListener('click', () => {
         PriseColor.innerHTML = 1490;
         Photo.src = '/img/blue.jpg';
 
-        /*  Photo.forEach(item => {
-             item.style.backroundImage = 'url("/img/blue.jpg")';
-             //item.style.backroundImage = "yellow";
-
-         }); */
-
-        Photo.innerHTML = '< div class = "img__raincoat" > < img src = "/img/png.jpg" > < /div>';
 
 
 
