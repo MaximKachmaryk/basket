@@ -19,89 +19,97 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <div class="product_body">
-                    <div class="img__raincoat"> <img src="/img/png.jpg"></div>
+            <div class="basket__item">
+                <div class="col-md-8">
 
-                    <div class="prameters">
-                        <h2>Дощовик teamGoal Training</h2>
-                        <ul>
-                            <li> колір:Puma Black-Asphalt</li>
-                            <li>розмір:M</li>
-                            <li>ART:656559</li>
-                        </ul>
-                        <select class="form-select" id="val" aria-label="Default select example">
-                        <option selected>Оберіть кількість</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                    <div class="product_body">
+                        <div class="img__raincoat"> <img src="/img/png.jpg"></div>
+
+                        <div class="prameters">
+                            <h2>Дощовик teamGoal Training</h2>
+                            <ul>
+                                <li> колір:Puma Black-Asphalt</li>
+                                <li>розмір:M</li>
+                                <li>ART:656559</li>
+                            </ul>
+                            <select class="form-select" id="val" data-prise="2090" aria-label="Default select example">
+                        <option selected class="select1">Оберіть кількість</option>
+                        <option   value="1" >1</option>
+                        <option  value="2"data-prise="4180">2</option>
+                        <option  value="3"data-prise="6270">3</option>
                       </select>
-                        <select class="form-select" id="valColor" aria-label="Default select example">
+                            <select class="form-select" id="valColor" aria-label="Default select example">
                         <option selected>Виберіть колір</option>
                         <option value="1">чорний</option>
                         <option value="2">синій</option>
                        
                       </select>
-                        <a href="" class="change">змінити</a>
-                        <a href="" class="remove">видалити товар</a>
-                        <div class="details_wrapper">
+                            <a href="" class="change">змінити</a>
+                            <a href="" class="remove">видалити товар</a>
+                            <div class="details_wrapper">
 
-                            <div class="prise">
-                                <div class="first_prise">2090,00</div>
+                                <div class="prise">
+                                    <div class="first_prise">2090,00</div>
 
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
 
-                </div>
-
-                <div class="product_body-second">
-                    <a href="" class="img__keds"> <img src="/img/png (1).jpg" alt="l"></a>
+                    <div class="product_body-second">
+                        <a href="" class="img__keds"> <img src="/img/png (1).jpg" alt="l"></a>
 
 
-                    <div class="prametersShoes">
-                        <h2>КЕДЫ SUEDE VTG THE NEVERWORN TRAINERS</h2>
-                        <ul>
-                            <li> колір:Puma Black-Whipper</li>
-                            <li>розмір:42.5 eur</li>
-                            <li>ART:656559</li>
-                        </ul>
-                        <select class="form-select" id="shoes" aria-label="Default select example">
-                        <option selected>Виберіть кількість</option>
+                        <div class="prametersShoes">
+                            <h2>КЕДЫ SUEDE VTG THE NEVERWORN TRAINERS</h2>
+                            <ul>
+                                <li> колір:Puma Black-Whipper</li>
+                                <li>розмір:42.5 eur</li>
+                                <li>ART:656559</li>
+                            </ul>
+                            <select class="form-select" id="shoes" aria-label="Default select example">
+                        <option selected class="select">Виберіть кількість</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                       </select>
-                        <a href="" class="change">змінити</a>
-                        <a href="" class="remove">видалити товар</a>
+                            <a href="" class="change">змінити</a>
+                            <a href="" class="remove">видалити товар</a>
 
-                        <div class="details_wrapper">
+                            <div class="details_wrapper">
 
-                            <div class="prise">
-                                <div class="first_prise">3790,00</div>
+                                <div class="prise">
+                                    <div class="first_prise">3790,00</div>
 
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
 
-            <div class="col-md-4">
-                <div class="card-body">
-                    <h5 class="card-title">Деталі замовлення</h4>
+                <div class="col-md-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Деталі замовлення</h4>
 
-                        <div class="cart-total">
+                            <div class="cart-total">
 
-                            <p><span class="h5">сума:</span>
-                                <div class="total-price">0</div>
-                                <span class="money">грн</span></p>
-                        </div>
+                                <p><span class="h5">сума:</span>
+                                    <div id="total-prise" class="total-price">0</div>
+                                    <span class="money">грн</span></p>
+                            </div>
+
+
+                    </div>
+
+
+
 
 
                 </div>
@@ -111,11 +119,6 @@
 
 
             </div>
-
-
-
-
-
         </div>
 
     </div>

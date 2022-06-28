@@ -27,10 +27,8 @@ document.getElementById("val").addEventListener('click', () => {
     }
     /* else if (valueFirstItem === 1 || valueColoredit === 2) {
            finalPrise.innerHTML = priseRaincoatAction;
-
        } else if (valueFirstItem === 2 || valueColoredit === 2) {
            finalPrise.innerHTML = priseRaincoatAction * 2;
-
        } else if (valueFirstItem === 3 || valueColoredit === 2) {
            finalPrise.innerHTML = priseRaincoatAction * 3;
        } */
@@ -81,3 +79,22 @@ document.getElementById("shoes").addEventListener('click', () => {
     }
 })
 console.log("color", valueColoredit);
+let sel = document.getElementById('val').dataset.prise;
+
+function getPriseRC(valueColor) {
+    if (valueColor == 1) {
+        finalPrise.innerHTML = priseRaincoat;
+        Photo.src = '/img/png.jpg';
+    }
+
+
+    if (valueColor == 2) {
+        finalPrise.innerHTML = priseRaincoatAction;
+        Photo.src = '/img/blue.jpg';
+
+
+
+
+
+    }
+}
