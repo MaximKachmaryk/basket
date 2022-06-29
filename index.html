@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ -->
     <link rel="stylesheet" href="/style.css">
 
     <title>Hello, world!</title>
@@ -18,51 +19,55 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="basket__item">
-                <div class="col-md-8">
 
-                    <div class="product_body">
-                        <div class="img__raincoat"> <img src="/img/png.jpg"></div>
 
-                        <div class="prameters">
-                            <h2>Дощовик teamGoal Training</h2>
-                            <ul>
-                                <li> колір:Puma Black-Asphalt</li>
-                                <li>розмір:M</li>
-                                <li>ART:656559</li>
-                            </ul>
-                            <select class="form-select" id="val" data-prise="2090" aria-label="Default select example">
+
+
+        <div class="product_body">
+
+
+            <div class="prameters">
+                <div class="box">
+                    <div class="img__raincoat"> <img src="/img/png.jpg"></div>
+                    <div class="box_par">
+                        <h2>Дощовик teamGoal Training</h2>
+                        <ul>
+                            <li> колір:Puma Black-Asphalt</li>
+                            <li>розмір:M</li>
+                            <li>ART:656559</li>
+                        </ul>
+                        <select class="form-select" id="val" data-prise="2090" aria-label="Default select example">
                         <option selected class="select1">Оберіть кількість</option>
                         <option   value="1" >1</option>
                         <option  value="2"data-prise="4180">2</option>
                         <option  value="3"data-prise="6270">3</option>
                       </select>
-                            <select class="form-select" id="valColor" aria-label="Default select example">
+                        <select class="form-select" id="valColor" aria-label="Default select example">
                         <option selected>Виберіть колір</option>
                         <option value="1">чорний</option>
                         <option value="2">синій</option>
                        
                       </select>
-                            <a href="" class="change">змінити</a>
-                            <a href="" class="remove">видалити товар</a>
-                            <div class="details_wrapper">
+                        <a href="" class="change">змінити</a>
+                        <a href="" class="remove">видалити товар</a>
+                        <div class="details_wrapper">
 
-                                <div class="prise">
-                                    <div class="first_prise">2090,00</div>
+                            <div class="prise">
+                                <div class="first_prise">2090,00</div>
 
-                                </div>
                             </div>
-
                         </div>
-
                     </div>
+                </div>
 
-                    <div class="product_body-second">
+                <div class="product_body-second">
+
+
+
+                    <div class="prametersShoes">
                         <a href="" class="img__keds"> <img src="/img/png (1).jpg" alt="l"></a>
 
-
-                        <div class="prametersShoes">
+                        <div class="box_par">
                             <h2>КЕДЫ SUEDE VTG THE NEVERWORN TRAINERS</h2>
                             <ul>
                                 <li> колір:Puma Black-Whipper</li>
@@ -70,11 +75,11 @@
                                 <li>ART:656559</li>
                             </ul>
                             <select class="form-select" id="shoes" aria-label="Default select example">
-                        <option selected class="select">Виберіть кількість</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                      </select>
+                            <option selected class="select">Виберіть кількість</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
                             <a href="" class="change">змінити</a>
                             <a href="" class="remove">видалити товар</a>
 
@@ -85,45 +90,52 @@
 
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="col-md-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Деталі замовлення</h4>
-
-                            <div class="cart-total">
-
-                                <p><span class="h5">сума:</span>
-                                    <div id="total-prise" class="total-price">0</div>
-                                    <span class="money">грн</span></p>
-                            </div>
-
 
                     </div>
-
-
-
-
-
                 </div>
+            </div>
 
 
+            <div class="card-body">
+                <h5 class="card-title">Деталі замовлення</h4>
 
+                    <div class="cart-total">
+
+                        <p><span class="h5">сума:</span>
+                            <div id="total-prise" class="total-price">0</div>
+                            <span class="money">грн</span></p>
+                    </div>
 
 
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
+
+
+
+
+
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     <script src="/script.js"></script>
 
 </body>

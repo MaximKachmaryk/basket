@@ -57,3 +57,6 @@ document.getElementById("shoes").addEventListener('click', () => {
     getPriseShoew();
 
 });
+/* function calculate(valueFirstItemShoes){
+
+} */

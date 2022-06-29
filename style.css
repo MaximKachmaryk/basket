@@ -1,18 +1,32 @@
-.product_body {
-    margin-top: 300px;
-    display: flex;
-    justify-content: space-between;
-}
+        .product_body {
+            margin-top: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .product_body .box {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .product_body .img__raincoat {
+            display: flex;
+            height: 250px;
+        }
+        
+        .product_body-second .img__keds {
+            display: flex;
+            height: 250px;
+            width: 25Opx;
+        }
+        
+        .product_body-second .prametersShoes {
+            display: flex;
+            margin-right: 50px;
+        }
+        /* 
 
-.product_body .parameters {
-    margin-top: 300px;
-    display: block;
-}
 
-.product_body-second .prametersShoes {
-    display: block;
-    margin-right: 50px;
-}
 
 .product_body-second {
     margin-top: 50px;
@@ -23,7 +37,7 @@
 .product_body .img__raincoat {
     display: flex;
     height: 250px;
-    /* width: 25Opx; */
+    /* width: 25Opx; 
 }
 
 .product_body-second .img__keds {
@@ -35,4 +49,5 @@
 .card-body {
     display: block;
     margin-top: 300px;
-}
+    background-color: aqua;
+} */
