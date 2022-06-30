@@ -14,27 +14,49 @@
     height: 250px;
 }
 
-.product_body-second .img__keds {
+.product_body .img__keds {
     display: flex;
     height: 250px;
     width: 25Opx;
+    justify-content: space-around;
 }
 
-.product_body-second .prametersShoes {
+.product_body .prametersShoes {
     display: flex;
-    margin-right: 50px;
+    justify-content: space-around;
 }
+
+.product_body-second {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body {
+    display: block;
+    height: 250px;
+    border: 3px solid;
+}
+
+.card-body .btn {
+    margin-top: 70px;
+    background-color: red;
+    height: 40px;
+    width: 200px;
+}
+
+
+/* .product_body .box_par {
+    display: flex;
+    justify-content: space-between;
+} */
 
 
 /* 
 
 
 
-.product_body-second {
-margin-top: 50px;
-display: flex;
-justify-content: space-between;
-}
+
 
 .product_body .img__raincoat {
 display: flex;
