@@ -1,30 +1,32 @@
 //отримання даниз з форми select та присвоєння цін 
-
+let rezult, valueFirstItem, valueFirstItemShoes;
 const valueColoredit = document.getElementById('valColor').value;
-const priseShoes = 3790;
+let priseShoes = 3790;
 const priseRaincoatAction = 1490;
-const priseRaincoat = 2090;
+let priseRaincoat = 2090;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
-
 let finalPrise = document.querySelector('.total-price');
+
+function Calculate() {
+    if (!valueFirstItem || !valueFirstItemShoes) {
+        finalPrise.textContent = "__";
+        return;
+    } else {
+        finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (valueFirstItemShoes * priseShoes);
+    }
+
+}
+
 
 document.getElementById("val").addEventListener('click', () => {
 
 
-        let valueFirstItem = document.getElementById('val').value;
+        valueFirstItem = document.getElementById('val').value;
 
-        let finalPrise = document.querySelector('.total-price');
-        finalPrise.innerHTML = valueFirstItem;
 
-        function calcPrs() {
-            const valueFirstItemShoes = document.getElementById('shoes').value;
-            valueFirstItem *= priseRaincoat;
-            valueFirstItemShoes * priseShoes;
-            return finalPrise.innerHTML = valueFirstItem + valueFirstItemShoes;
-        }
-        calcPrs();
 
+        Calculate();
     })
     //замшна каритинки при виборі кольору
 document.getElementById("valColor").addEventListener('click', () => {
@@ -32,31 +34,30 @@ document.getElementById("valColor").addEventListener('click', () => {
     console.log(valueColor);
 
     if (valueColor == 1) {
+
         PriseColor.innerHTML = priseRaincoat;
         Photo.src = '/img/png.jpg';
+        priseRaincoat = 2090;
+        Calculate();
+
+
     }
 
     if (valueColor == 2) {
         PriseColor.innerHTML = priseRaincoatAction;
         Photo.src = '/img/blue.jpg';
+        priseRaincoat = 1490;
+        Calculate();
     }
+
 })
 
 //отримання данних з select взуття
 document.getElementById("shoes").addEventListener('click', () => {
-    let valueFirstItemShoes = document.getElementById('shoes').value;
+    valueFirstItemShoes = document.getElementById('shoes').value;
     console.log(valueFirstItemShoes);
 
-    function getPriseShoew() {
-        let valueFirstItem = document.getElementById('val').value;
-        valueFirstItem *= priseRaincoat;
 
-        return finalPrise.innerHTML = valueFirstItemShoes * priseShoes + valueFirstItem;
-
-    };
-    getPriseShoew();
+    Calculate();
 
 });
-/* function calculate(valueFirstItemShoes){
-
-} */

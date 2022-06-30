@@ -38,14 +38,14 @@
                         </ul>
                         <select class="form-select" id="val" data-prise="2090" aria-label="Default select example">
                         <option selected class="select1">Оберіть кількість</option>
-                        <option   value="1" >1</option>
-                        <option  value="2"data-prise="4180">2</option>
-                        <option  value="3"data-prise="6270">3</option>
+                        <option   value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
                       </select>
                         <select class="form-select" id="valColor" aria-label="Default select example">
                         <option selected>Виберіть колір</option>
-                        <option value="1">чорний</option>
-                        <option value="2">синій</option>
+                        <option value="1" id="priseblack" data-prise="2090">чорний</option>
+                        <option value="2"data-prise="1490">синій</option>
                        
                       </select>
                         <a href="" class="change">змінити</a>
@@ -86,7 +86,7 @@
                             <div class="details_wrapper">
 
                                 <div class="prise">
-                                    <div class="first_prise">3790,00</div>
+                                    <div class="first_prise" data-prise="3790">3790,00</div>
 
                                 </div>
                             </div>
@@ -98,14 +98,16 @@
 
 
             <div class="card-body">
-                <h5 class="card-title">Деталі замовлення</h4>
+                <h5 class="card-title">Деталі замовлення</h5>
 
-                    <div class="cart-total">
+                <div class="cart-total">
 
-                        <p><span class="h5">сума:</span>
-                            <div id="total-prise" class="total-price">0</div>
-                            <span class="money">грн</span></p>
-                    </div>
+                    <p><span class="h5">сума:</span>
+                        <div id="total-prise" class="total-price">0</div>
+                        <span class="money">грн</span>
+                    </p>
+                </div>
+                <button class="btn">Оформити замовлення</button>
 
 
             </div>
