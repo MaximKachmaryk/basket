@@ -61,3 +61,24 @@ document.getElementById("shoes").addEventListener('click', () => {
     Calculate();
 
 });
+
+/*  switch (valueColor) {
+         case 1:
+             PriseColor.innerHTML = priseRaincoat;
+             Photo.src = '/img/png.jpg';
+             priseRaincoat = 2090;
+             Calculate();
+
+             break;
+
+
+         case 2:
+
+             PriseColor.innerHTML = priseRaincoatAction;
+             Photo.src = '/img/blue.jpg';
+             priseRaincoat = 1490;
+             Calculate();
+
+             break;
+
+     } */
