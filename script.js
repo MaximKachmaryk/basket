@@ -2,8 +2,8 @@
 let valueFirstItem, valueFirstItemShoes;
 const valueColoredit = document.getElementById('valColor').value;
 let priseShoes = 3790;
-const priseRaincoatAction = 1490;
-let priseRaincoat = 2090;
+let priseRaincoatAction;
+let priseRaincoat;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
 let finalPrise = document.querySelector('.total-price');
@@ -36,19 +36,31 @@ document.getElementById("valColor").addEventListener('click', () => {
 
     if (valueColor == 1) {
 
-        PriseColor.innerHTML = priseRaincoat;
+
         Photo.src = '/img/png.jpg';
-        priseRaincoat = 2090;
+        let priseRaincoatBlack = document.querySelector('.priseblack');
+        //priseRaincoat.dataset.prise;
+
+        PriseColor.innerHTML = priseRaincoat;
+        priseRaincoat = priseRaincoatBlack.dataset.prise;
+        console.log(priseRaincoat);
+        PriseColor.textContent = priseRaincoat;
+
         Calculate();
 
 
     }
 
     if (valueColor == 2) {
-        PriseColor.innerHTML = priseRaincoatAction;
         Photo.src = '/img/blue.jpg';
-        priseRaincoat = 1490;
+        let priseRaincoatBlue = document.querySelector('.priseblue');
+        PriseColor.innerHTML = priseRaincoat;
+        priseRaincoat = priseRaincoatBlue.dataset.prise;
+        console.log(priseRaincoat);
+        PriseColor.textContent = priseRaincoat;
+        //priseRaincoat = 2090;
         Calculate();
+
     }
     /*  switch (valueColor) {
          case 1:
