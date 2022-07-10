@@ -1,23 +1,32 @@
 //отримання даниз з форми select та присвоєння цін 
 let valueFirstItem, valueFirstItemShoes;
 const valueColoredit = document.getElementById('valColor').value;
-let priseShoes = 3790;
+let priseShoes;
+const box = document.querySelector('.box');
+
+const butnRemove = document.getElementById('remove');
 let priseRaincoatAction;
 let priseRaincoat;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
 let finalPrise = document.querySelector('.total-price');
 
+butnRemove.addEventListener('click', removeBox);
 
 function Calculate() {
-    if (!valueFirstItem || !valueFirstItemShoes) {
-        finalPrise.textContent = "___";
+    if (!valueFirstItem && !valueFirstItemShoes) {
+
+        finalPrise.textContent = "";
         return;
     } else {
         finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (priseShoes * valueFirstItemShoes);
     }
 
 }
+/* function Calculate() {
+    finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (priseShoes * valueFirstItemShoes);
+}; */
+Calculate();
 
 
 document.getElementById("val").addEventListener('click', () => {
@@ -89,8 +98,23 @@ document.getElementById("valColor").addEventListener('click', () => {
 document.getElementById("shoes").addEventListener('click', () => {
     valueFirstItemShoes = document.getElementById('shoes').value;
     console.log(valueFirstItemShoes);
+    let priseS = document.querySelector('.prise_shoes');
+    priseShoes = priseS.dataset.prise;
 
 
     Calculate();
 
 });
+
+function removeBox() {
+
+    /* box.forEach(item => {
+        item.remove();
+    }); */
+    box.innerHTML = "";
+
+
+
+
+    Calculate();
+};

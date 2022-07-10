@@ -1,94 +1,65 @@
-.product_body {
-    margin-top: 300px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.product_body .box {
-    display: flex;
-    justify-content: space-between;
-}
-
-.product_body .img__raincoat {
-    display: flex;
-    height: 250px;
-}
-
-.product_body .img__keds {
-    display: flex;
-    height: 250px;
-    width: 25Opx;
-    justify-content: space-around;
-}
-
-.product_body .prametersShoes {
-    display: flex;
-    justify-content: space-around;
-}
-
-.product_body-second {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.card-body {
-    display: block;
-    height: 250px;
-}
-
-.card-body .btn {
-    margin-top: 70px;
-    background-color: red;
-    border: none;
-    height: 40px;
-    width: 200px;
-}
-
-.product_body .line {
-    justify-content: center;
-    height: 2px;
-    background-color: grey;
-}
-
-.card-body .line {
-    height: 1px;
-    background-color: grey;
-}
-
-
-/* .card-body .pol {
-    height: 1px;
-    background-color: grey;
-} */
-
-
-/* .product_body .box_par {
-    display: flex;
-    justify-content: space-between;
-} */
-
-
-/* 
-
-
-
-
-
-.product_body .img__raincoat {
-display: flex;
-height: 250px;
-/* width: 25Opx; 
-}
-
-.product_body-second .img__keds {
-display: flex;
-height: 250px;
-width: 25Opx;
-}
-
-.card-body {
-display: block;
-margin-top: 300px;
-background-color: aqua;
-} */
+                                    .product_body {
+                                        margin-top: 100px;
+                                        display: flex;
+                                        justify-content: space-around;
+                                    }
+                                    
+                                    .product_body .parameters {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    .product_body .box {
+                                        margin-top: 20px;
+                                        width: 900px;
+                                        display: flex;
+                                        justify-content: start;
+                                    }
+                                    
+                                    .product_body .img__raincoat {
+                                        margin-right: 80px;
+                                        display: flex;
+                                        height: 250px;
+                                    }
+                                    
+                                    .product_body .img__keds {
+                                        margin-right: 80px;
+                                        display: flex;
+                                        height: 250px;
+                                        width: 25Opx;
+                                    }
+                                    
+                                    .product_body .prametersShoes {
+                                        display: flex;
+                                        justify-content: space-around;
+                                    }
+                                    
+                                    .product_body-second {
+                                        margin-top: 50px;
+                                        display: flex;
+                                        justify-content: space-around;
+                                    }
+                                    
+                                    .card-body {
+                                        display: block;
+                                        height: 250px;
+                                    }
+                                    
+                                    .card-body .btn {
+                                        margin-top: 70px;
+                                        background-color: red;
+                                        border: none;
+                                        height: 40px;
+                                        width: 200px;
+                                    }
+                                    
+                                    .parameters .line {
+                                        margin: 10px 0;
+                                        height: 1px;
+                                        width: 100%;
+                                        background-color: grey;
+                                    }
+                                    /*   .card-body .line {
+                                        height: 1px;
+                                        background-color: grey;
+                                    } */
