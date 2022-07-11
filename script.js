@@ -3,20 +3,21 @@ let valueFirstItem, valueFirstItemShoes;
 const valueColoredit = document.getElementById('valColor').value;
 let priseShoes;
 const box = document.querySelector('.box');
-
+const xx = 2000;
 const butnRemove = document.getElementById('remove');
 let priseRaincoatAction;
-let priseRaincoat;
+priseRaincoat = document.querySelector('.priseblack').dataset.prise;
+priseShoes = document.querySelector('.prise_shoes').dataset.prise;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
 let finalPrise = document.querySelector('.total-price');
-
+console.log(priseRaincoat, "work");
 butnRemove.addEventListener('click', removeBox);
 
 function Calculate() {
     if (!valueFirstItem && !valueFirstItemShoes) {
 
-        finalPrise.textContent = "";
+        finalPrise.textContent = Number(priseRaincoat) + Number(priseShoes);
         return;
     } else {
         finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (priseShoes * valueFirstItemShoes);

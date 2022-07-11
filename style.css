@@ -54,7 +54,7 @@
                                     }
                                     
                                     .parameters .line {
-                                        margin: 10px 0;
+                                        /*  margin: 10px 0; */
                                         height: 1px;
                                         width: 100%;
                                         background-color: grey;
