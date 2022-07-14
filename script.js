@@ -1,13 +1,14 @@
 //отримання даниз з форми select та присвоєння цін 
-let valueFirstItem, valueFirstItemShoes;
+let valueFirstItem = 1;
+let valueFirstItemShoes = 1;
 const valueColoredit = document.getElementById('valColor').value;
-let priseShoes;
+//let priseShoes;
 const box = document.querySelector('.box');
 const xx = 2000;
 const butnRemove = document.getElementById('remove');
 let priseRaincoatAction;
-priseRaincoat = document.querySelector('.priseblack').dataset.prise;
-priseShoes = document.querySelector('.prise_shoes').dataset.prise;
+let priseRaincoat = document.querySelector('.priseblack').dataset.prise;
+const priseShoes = document.querySelector('.prise_shoes').dataset.prise;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
 let finalPrise = document.querySelector('.total-price');
@@ -20,7 +21,7 @@ function Calculate() {
         finalPrise.textContent = Number(priseRaincoat) + Number(priseShoes);
         return;
     } else {
-        finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (priseShoes * valueFirstItemShoes);
+        finalPrise.textContent = Number(valueFirstItem * priseRaincoat) + Number(valueFirstItemShoes * priseShoes);
     }
 
 }
@@ -28,8 +29,6 @@ function Calculate() {
     finalPrise.innerHTML = (valueFirstItem * priseRaincoat) + (priseShoes * valueFirstItemShoes);
 }; */
 Calculate();
-
-
 document.getElementById("val").addEventListener('click', () => {
 
 
@@ -63,12 +62,12 @@ document.getElementById("valColor").addEventListener('click', () => {
 
     if (valueColor == 2) {
         Photo.src = '/img/blue.jpg';
-        let priseRaincoatBlue = document.querySelector('.priseblue');
-        PriseColor.innerHTML = priseRaincoat;
-        priseRaincoat = priseRaincoatBlue.dataset.prise;
+        priseRaincoatBlue = document.querySelector('.priseblue').dataset.prise;
+        PriseColor.innerHTML = priseRaincoatBlue;
+        priseRaincoat = priseRaincoatBlue;
         console.log(priseRaincoat);
         PriseColor.textContent = priseRaincoat;
-        //priseRaincoat = 2090;
+        priseRaincoat = document.querySelector('.priseblue').dataset.prise;
         Calculate();
 
     }
@@ -99,8 +98,8 @@ document.getElementById("valColor").addEventListener('click', () => {
 document.getElementById("shoes").addEventListener('click', () => {
     valueFirstItemShoes = document.getElementById('shoes').value;
     console.log(valueFirstItemShoes);
-    let priseS = document.querySelector('.prise_shoes');
-    priseShoes = priseS.dataset.prise;
+    /*  let priseS = document.querySelector('.prise_shoes');
+     priseShoes = priseS.dataset.prise; */
 
 
     Calculate();
