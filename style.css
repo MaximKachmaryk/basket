@@ -16,6 +16,13 @@
                                         justify-content: start;
                                     }
                                     
+                                    .product_body .boxS {
+                                        margin-top: 20px;
+                                        width: 900px;
+                                        display: flex;
+                                        justify-content: start;
+                                    }
+                                    
                                     .product_body .img__raincoat {
                                         margin-right: 80px;
                                         display: flex;
@@ -55,9 +62,11 @@
                                     
                                     .parameters .line {
                                         /*  margin: 10px 0; */
+                                        border-top: solid;
                                         height: 1px;
-                                        width: 100%;
-                                        background-color: grey;
+                                        width: 500px;
+                                        color: rgb(44, 44, 40);
+                                        /* background-color: grey; */
                                     }
                                     /*   .card-body .line {
                                         height: 1px;

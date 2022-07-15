@@ -3,17 +3,27 @@ let valueFirstItem = 1;
 let valueFirstItemShoes = 1;
 const valueColoredit = document.getElementById('valColor').value;
 //let priseShoes;
-const box = document.querySelector('.box');
-const xx = 2000;
-const butnRemove = document.getElementById('remove');
+let box = document.querySelector('.box');
+let boxS = document.querySelector('.boxS');
+
+
+const butnRemove = document.querySelectorAll('.remove');
+const butnRemoveS = document.querySelectorAll('.removeShoes');
 let priseRaincoatAction;
 let priseRaincoat = document.querySelector('.priseblack').dataset.prise;
-const priseShoes = document.querySelector('.prise_shoes').dataset.prise;
+let priseShoes = document.querySelector('.prise_shoes').dataset.prise;
 const PriseColor = document.querySelector(".first_prise");
 const Photo = document.querySelector('.img__raincoat img');
 let finalPrise = document.querySelector('.total-price');
 console.log(priseRaincoat, "work");
-butnRemove.addEventListener('click', removeBox);
+
+butnRemove.forEach(btnItem => {
+    btnItem.addEventListener('click', removeBox);
+});
+butnRemoveS.forEach(btnItemS => {
+    btnItemS.addEventListener('click', removeBoxS);
+});
+
 
 function Calculate() {
     if (!valueFirstItem && !valueFirstItemShoes) {
@@ -47,11 +57,11 @@ document.getElementById("valColor").addEventListener('click', () => {
 
 
         Photo.src = '/img/png.jpg';
-        let priseRaincoatBlack = document.querySelector('.priseblack');
+        //let priseRaincoatBlack = document.querySelector('.priseblack');
         //priseRaincoat.dataset.prise;
 
         PriseColor.innerHTML = priseRaincoat;
-        priseRaincoat = priseRaincoatBlack.dataset.prise;
+        priseRaincoat = document.querySelector('.priseblack').dataset.prise;
         console.log(priseRaincoat);
         PriseColor.textContent = priseRaincoat;
 
@@ -62,9 +72,9 @@ document.getElementById("valColor").addEventListener('click', () => {
 
     if (valueColor == 2) {
         Photo.src = '/img/blue.jpg';
-        priseRaincoatBlue = document.querySelector('.priseblue').dataset.prise;
-        PriseColor.innerHTML = priseRaincoatBlue;
-        priseRaincoat = priseRaincoatBlue;
+        //priseRaincoatBlue = document.querySelector('.priseblue').dataset.prise;
+        PriseColor.innerHTML = document.querySelector('.priseblue').dataset.prise;
+        //priseRaincoat = priseRaincoatBlue;
         console.log(priseRaincoat);
         PriseColor.textContent = priseRaincoat;
         priseRaincoat = document.querySelector('.priseblue').dataset.prise;
@@ -108,13 +118,14 @@ document.getElementById("shoes").addEventListener('click', () => {
 
 function removeBox() {
 
-    /* box.forEach(item => {
-        item.remove();
-    }); */
     box.innerHTML = "";
+    priseRaincoat = 0;
+    Calculate();
+};
 
+function removeBoxS() {
 
-
-
+    boxS.innerHTML = "";
+    priseShoes = 0;
     Calculate();
 };
